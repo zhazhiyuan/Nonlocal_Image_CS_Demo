@@ -1,0 +1,68 @@
+==============================================================================
+
+                                  MH-BCS-SPL
+
+                            Version 1.0, 19-jul-2012
+
+                       Copyright (C) 2012  James E. Fowler
+
+==============================================================================
+
+OVERVIEW:
+
+  These MATLAB programs implement the Multihypothesis Block Compressed
+  Sensing - Smoothed Projected Landweber (MH-BCS-SPL) algorithm as
+  described in paper:
+  
+    C. Chen, E. W. Tramel, and J. E. Fowler, "Compressed-Sensing Recovery
+    of Images and Video Using Multihypothesis Predictions," in
+    Proceedings of the 45th Asilomar Conference on Signals, Systems,
+    and Computers, Pacific Grove, CA, November 2011, pp. 1193-1198.
+
+  Specifically, this code reproduces the experiment results of the
+  paper (Table 3) using the MH-BCS-SPL and MH-MS-BCS-SPL algorithms. The code
+  for these is:
+
+    run_experiment_mhbcsspl.m
+    run_experiment_mhmsbcsspl.m
+  
+  This code relies on BCS-SPL Version 1.4
+  (http://www.ece.msstate.edu/~fowler/BCSSPL/), the Wavelet Software package
+  (http://eeweb.poly.edu/iselesni/WaveletSoftware/), Pascal Getreuer's
+  Wavelet CDF 9/7 package (http://www.getreuer.info/home/waveletcdf97),
+  and the ssim.m function (https://ece.uwaterloo.ca/~z70wang/research/ssim/).
+  All will need to reside within the current MATLAB search path.
+
+  Note that, since most of this code relies on random projections,
+  the results produced may differ slightly in appearance and
+  value from those of the paper.
+
+==============================================================================
+
+
+AVAILABILITY:
+
+  For updated versions of MH-BCS-SPL, as well as the article on
+  which it is based, consult:
+    http://www.ece.msstate.edu/~fowler/BCSSPL/
+
+
+==============================================================================
+
+
+COPYRIGHT AND LICENSE INFORMATION:
+
+  Copyright (C) 2012  James E. Fowler
+  
+  The programs herein are free software; you can redistribute
+  them and/or modify them under the terms of the GNU General Public License
+  as published by the Free Software Foundation; either version 2
+  of the License, or (at your option) any later version.
+
+  All programs herein are distributed in the hope that
+  they will be useful, but WITHOUT ANY WARRANTY; without even the implied
+  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See
+  the full text of the appropriate license for more details.
+  
+
+==============================================================================
